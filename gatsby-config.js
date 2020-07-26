@@ -5,6 +5,13 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+    resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-173543889-1",
+    },
+  }, 
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
